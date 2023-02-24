@@ -1,0 +1,215 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 65px;
+}
+
+header {
+    display: none;
+}
+
+main {
+    background-color: rgb(238, 238, 238);
+}
+.header-mobile {
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+    padding: 0px;
+    position: fixed;
+    background-color: white;
+}
+
+.header-mobile img{
+    cursor: pointer;
+}
+
+.header-mobile img:hover{
+    filter:contrast(0)
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 198, 198);
+}
+
+.info-hero {
+    padding: 0 16px;
+}
+
+.info-hero h1 {
+    margin: 32px 0px;
+    font-size: 1.7em;
+    color: rgb(41, 41, 40);
+}
+
+.info-hero  p {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 1.12em;
+    color: rgb(80, 79, 79);
+}
+
+.info-hero button {
+    margin-bottom: 32px;
+    width: 100%;
+    background-color: rgb(77, 77, 77);
+    border: none;
+    height: 40px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.info-hero button:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-article img {
+    width: 100%;
+}
+
+.main-article {
+    display: none;
+    width: 100%;
+}
+
+.aside {
+    padding: 16px;
+}
+
+.small-article img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.small-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.info-article h3 {
+    font-size: 1.3em;
+    color: rgb(68, 68, 68);
+    margin-bottom: 10px;
+}
+
+.info-article p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
+}
+
+.info-article a {
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: rgb(0, 81, 255);
+    transition: all 100ms ease-in;
+}
+
+.info-article a:hover {
+    color: rgb(152, 9, 247);
+}
+
+.learning {
+    margin-top: 32px;
+    width: 100%;
+}
+
+i{
+    cursor: pointer;
+}
+
+.learning h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.courses-cards{
+    padding: 0px 16px;
+}
+
+.card {
+    width: 100%;
+    background-color: rgb(194, 191, 191);
+    margin-bottom: 8px;
+}
+
+.title-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-content {
+    display: none;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    color: rgb(78, 78, 78);
+}
+
+.card  {
+    padding: 16px 16px 24px 16px;
+}
+
+
+.video {
+    width: 100%;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+
+.video h2 {
+    text-align: center;
+}
+
+.articles-video {
+    display: none;
+}
+
+.text-video{
+    display: none;
+}
+
+.video video {
+    margin-top: 16px;
+    width: 100%;
+}
+
+footer a {
+    display: none;
+}
+
+footer h6{
+    color: rgb(136, 136, 136);
+    padding: 16px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
