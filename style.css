@@ -85,6 +85,12 @@ main {
     display: none;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
