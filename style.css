@@ -14,8 +14,49 @@ body {
 }
 
 header {
+    width: 100%;
     display: none;
 }
+
+.header-desktop {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    height: 64px;
+    padding: 0px 24px;
+}
+
+.logo-header {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.logo-header h2 {
+    font-size: 1.3em;
+}
+.logo-header span {
+    color: grey;
+    margin-left: 4px;
+    font-weight: 400;
+}
+.logo-header img {
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1em;
+    color: rgb(61, 61, 61);
+}
+nav img {
+    display: none;
+}
+
 
 main {
     background-color: rgb(238, 238, 238);
@@ -38,6 +79,10 @@ main {
 
 .header-mobile img:hover{
     filter:contrast(0)
+}
+
+.desktop-img {
+    display: none;
 }
 
 .hero {
@@ -90,9 +135,24 @@ main {
     width: 100%;
 }
 
+.main-article h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    color: rgb(41, 41, 40);
+}
+
+.main-article p {
+    margin-bottom: 24px;
+}
 .main-article {
     display: none;
     width: 100%;
+    font-size: 0.9em;
+}
+
+.main-article h6 {
+    font-size: 0.8em;
+    color: rgb(105, 105, 105);
 }
 
 .aside {
@@ -165,7 +225,7 @@ i{
     justify-content: space-between;
 }
 
-.card .card-content {
+.card-content {
     display: none;
 }
 
@@ -213,3 +273,214 @@ footer h6{
     font-weight: 500;
 }
 
+
+@media screen and (min-width: 550px){
+    main{
+        width: 550px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 700px){
+    main {
+        width: 100%;
+    }
+    .header-mobile {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    .hero {
+        padding: 32px 24px;
+        flex-direction: row;
+    }
+    .hero img {
+        width: 60%;
+        margin-right: 24px;
+    }
+
+    .info-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .articles {
+        display: flex;
+        flex-direction: row;
+        padding: 32px 24px 0px 32px;
+        margin-bottom: 32px;
+        gap: 16px;
+    }
+
+    .main-article {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    aside.aside {
+        padding-top: 0px;
+        width: 40%;
+
+    }
+    
+    .mobile-img {
+        display: none;
+    }
+
+    img.desktop-img {
+        display: inline-block;
+        width: 35%;
+
+    }
+
+    .info-article {
+        width: 65%;
+    }
+
+    .info-article h3 {
+        font-size: 1em;
+    }
+
+    .info-article p {
+        font-size: 0.7em;
+        margin-bottom: 8px;
+    }
+
+    .info-article a {
+        font-size: 0.6em;
+    }
+
+    .small-article{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    .learning {
+        background-color: rgb(224, 224, 224);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 74px 32px 74px;
+    }
+
+    .learning h1 {
+        padding: 32px 0px;
+    }
+
+    .courses-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card-content{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    img.card-content{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .card {
+        background-color: white;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .title-card h2 {
+        font-size: 1em;
+        padding: 16px 16px 8px 16px;
+    }
+
+    h3.card-content {
+        padding: 8px 16px 8px 16px;
+        font-size: 0.8em;
+    }
+
+    p.card-content {
+        padding: 0px 16px 24px 16px;
+        font-size: 0.7em;
+    }
+    i.gg-chevron-down{
+        display: none;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .container-video {
+        display: flex;
+    }
+
+    .video-div {
+        width: 60%;
+        padding: 0px 24px;
+    }
+
+    .video-div video {
+        margin-bottom: 24px;
+    }
+
+    .text-video {
+        display: flex;
+    }
+
+    h3.text-video {
+        color:  rgb(61, 61, 61);
+        margin-bottom: 8px;
+    }
+
+    p.text-video {
+        font-size: 0.84em;
+    }
+
+    .articles-video {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 16px 16px;
+    }
+
+    .small-article img {
+        width: 35%;
+    }
+    .video h2 {
+        margin: 32px 0px;
+    }
+
+    footer {
+        border-top: 1px solid rgb(211, 209, 209);
+        padding-bottom: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+    }
+
+    footer a {
+        display: contents;
+        font-size: 0.8em;
+        
+    }
+
+    .terms {
+        display: flex;
+        
+    }
+}
